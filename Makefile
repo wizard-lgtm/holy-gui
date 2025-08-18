@@ -11,11 +11,11 @@ TARGET = holy-gui
 UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S),Darwin)
     # macOS
-    CFLAGS = -Wall -Wextra -O2 $(shell pkg-config --cflags sdl3)
+    CFLAGS = -Wall -Wextra -g -O0 $(shell pkg-config --cflags sdl3)
     LDFLAGS = $(shell pkg-config --libs sdl3)
 else
     # Linux
-    CFLAGS = -Wall -Wextra -O2 $(shell pkg-config --cflags sdl3)
+    CFLAGS = -Wall -Wextra -g -O0 $(shell pkg-config --cflags sdl3)
     LDFLAGS = $(shell pkg-config --libs sdl3)
 endif
 
