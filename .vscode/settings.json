@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "widgets.h": "c",
+        "sdl.h": "c"
+    }
+}
